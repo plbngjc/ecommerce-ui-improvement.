@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giao diện thương mại điện tử mẫu với tìm kiếm, gợi ý và danh sách sản phẩm.">
+  <title>Mua Sắm Nhanh - Giao diện thương mại điện tử</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <nav class="top-nav" aria-label="Điều hướng chính">
+    <div class="container nav-inner">
+      <ul class="nav-group">
+        <li class="nav-item">
+          <a class="nav-link is-active" href="#top" aria-current="page"><span class="nav-icon" aria-hidden="true">🏠</span><span class="nav-text">Trang chủ</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#video"><span class="nav-icon" aria-hidden="true">▶</span><span class="nav-text">Video ngắn</span></a>
+        </li>
+      </ul>
+
+      <ul class="nav-group">
+        <li class="nav-item">
+          <details class="nav-dropdown" name="nav-menu">
+            <summary>
+              <span class="nav-icon" aria-hidden="true">🔔</span><span class="nav-text">Thông báo</span>
+              <b class="nav-badge" aria-label="3 thông báo mới">3</b>
+            </summary>
+            <div class="nav-panel">
+              <p class="panel-title">Thông báo mới</p>
+              <a class="notice" href="#products"><strong>Flash sale 12h</strong><small>Tai nghe Bluetooth giảm còn 289.000đ</small></a>
+              <a class="notice" href="#video"><strong>Video mới</strong><small>Xem nhanh bình giữ nhiệt trong 15 giây</small></a>
+              <a class="notice" href="#products"><strong>Gợi ý cho bạn</strong><small>Đèn bàn học đang có giá tốt</small></a>
+            </div>
+          </details>
+        </li>
+        <li class="nav-item">
+          <details class="nav-dropdown" name="nav-menu">
+            <summary>
+              <span class="nav-icon" aria-hidden="true">👤</span><span class="nav-text">Tài khoản</span>
+            </summary>
+            <div class="nav-panel">
+              <p class="panel-title">Xin chào, Khách</p>
+              <a class="notice" href="#"><strong>Hồ sơ của tôi</strong></a>
+              <a class="notice" href="#"><strong>Đơn mua</strong></a>
+              <a class="notice" href="#"><strong>Sản phẩm yêu thích</strong></a>
+              <a class="notice" href="#"><strong>Đăng nhập / Đăng ký</strong></a>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="#" aria-label="Mua Sắm Nhanh - Trang chủ">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>MuaSắm<span class="brand-accent">Nhanh</span></span>
+      </a>
+
+      <form class="search-form" action="#products" method="get" role="search">
+        <label class="sr-only" for="search-input">Tìm kiếm sản phẩm</label>
+        <input id="search-input" type="search" name="q"
+               placeholder="Tìm sản phẩm, ví dụ: tai nghe bluetooth"
+               autocomplete="off">
+        <button type="submit" aria-label="Tìm kiếm"><span class="search-icon" aria-hidden="true">⌕</span><span class="search-text">Tìm kiếm</span></button>
+        <div class="suggestions" aria-label="Gợi ý tìm kiếm">
+          <p class="suggestions-title">Gợi ý tìm kiếm</p>
+          <a href="#products">Tai nghe Bluetooth</a>
+          <a href="#products">Bình giữ nhiệt</a>
+          <a href="#products">Đèn bàn học</a>
+          <a href="#products">Balo đi học</a>
+          <p class="spelling-tip">Mẹo: thử từ khóa ngắn hoặc tên sản phẩm phổ biến.</p>
+        </div>
+      </form>
+
+      <a class="cart-link" href="#cart" aria-label="Giỏ hàng">
+        <span aria-hidden="true">🛒</span><span>Giỏ hàng</span><b>0</b>
+      </a>
+    </div>
+
+    <div class="container header-bottom">
+      <span>Danh mục nổi bật:</span>
+      <a href="#products">Điện tử</a>
+      <a href="#products">Nhà cửa & đời sống</a>
+      <a href="#products">Phụ kiện</a>
+      <a href="#products">Học tập</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">GỢI Ý DÀNH CHO BẠN</p>
+          <h1>Tìm đúng món đồ.<br><span>Mua sắm dễ dàng.</span></h1>
+          <p class="hero-description">Khám phá sản phẩm hữu ích với thông tin rõ ràng, giá dễ so sánh và gợi ý tìm kiếm thuận tiện.</p>
+          <a class="primary-link" href="#products">Khám phá sản phẩm <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-label="Minh họa mua sắm" role="img">
+          <div class="art-circle circle-one"></div>
+          <div class="art-circle circle-two"></div>
+          <div class="art-card">
+            <span class="art-icon">✦</span>
+            <span class="art-small">LỰA CHỌN HÔM NAY</span>
+            <strong>Deal tốt<br>mỗi ngày</strong>
+            <span class="art-pill">Giá từ 89.000đ</span>
+          </div>
+          <div class="art-bubble">✓</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container product-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DÀNH CHO BẠN</p>
+          <h2>Sản phẩm nổi bật</h2>
+          <p class="section-description">Một số sản phẩm mẫu để minh họa bố cục trang thương mại điện tử.</p>
+        </div>
+        <a class="view-all" href="#products">Xem tất cả <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="filter-row" aria-label="Bộ lọc minh họa">
+        <span class="filter-label">Lọc nhanh:</span>
+        <button class="filter-chip active" type="button">Tất cả</button>
+        <button class="filter-chip" type="button">Dưới 200.000đ</button>
+        <button class="filter-chip" type="button">Đánh giá tốt</button>
+        <button class="filter-chip" type="button">Phổ biến</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="product-image image-blue" href="#product-headphones" aria-label="Xem tai nghe Bluetooth">
+            <span class="product-badge">BÁN CHẠY</span>
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" width="700" height="700" loading="lazy" alt="Tai nghe chụp tai màu đen">
+            <span class="image-caption">Âm thanh mỗi ngày</span>
+          </a>
+          <div class="product-info" id="product-headphones">
+            <p class="product-category">PHỤ KIỆN CÔNG NGHỆ</p>
+            <h3><a href="#product-headphones">Tai nghe Bluetooth không dây</a></h3>
+            <div class="rating"><span>★ ★ ★ ★ ★</span> <small>4.9 · 128 đánh giá</small></div>
+            <div class="price-row"><strong>289.000đ</strong><del>399.000đ</del></div>
+            <div class="product-meta"><span>Đã bán 1,2k</span><span>Miễn phí vận chuyển*</span></div>
+            <button class="add-button" type="button">＋ Thêm vào giỏ</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image image-sand" href="#product-bottle" aria-label="Xem bình giữ nhiệt">
+            <span class="product-badge badge-green">LỰA CHỌN XANH</span>
+            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=85" width="700" height="700" loading="lazy" alt="Bình nước tái sử dụng">
+            <span class="image-caption">Mang theo mỗi ngày</span>
+          </a>
+          <div class="product-info" id="product-bottle">
+            <p class="product-category">NHÀ CỬA & ĐỜI SỐNG</p>
+            <h3><a href="#product-bottle">Bình giữ nhiệt tối giản 500ml</a></h3>
+            <div class="rating"><span>★ ★ ★ ★ ☆</span> <small>4.7 · 86 đánh giá</small></div>
+            <div class="price-row"><strong>159.000đ</strong><del>220.000đ</del></div>
+            <div class="product-meta"><span>Đã bán 850</span><span>Đổi trả theo chính sách</span></div>
+            <button class="add-button" type="button">＋ Thêm vào giỏ</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image image-lilac" href="#product-lamp" aria-label="Xem đèn bàn">
+            <span class="product-badge badge-orange">GIÁ TỐT</span>
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85" width="700" height="700" loading="lazy" alt="Đèn bàn dùng cho góc học tập">
+            <span class="image-caption">Nâng cấp góc học tập</span>
+          </a>
+          <div class="product-info" id="product-lamp">
+            <p class="product-category">HỌC TẬP & VĂN PHÒNG</p>
+            <h3><a href="#product-lamp">Đèn bàn học thiết kế hiện đại</a></h3>
+            <div class="rating"><span>★ ★ ★ ★ ★</span> <small>4.8 · 64 đánh giá</small></div>
+            <div class="price-row"><strong>199.000đ</strong><del>269.000đ</del></div>
+            <div class="product-meta"><span>Đã bán 620</span><span>Gọn nhẹ, dễ bố trí</span></div>
+            <button class="add-button" type="button">＋ Thêm vào giỏ</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image image-peach" href="#product-backpack" aria-label="Xem balo">
+            <span class="product-badge badge-pink">MỚI</span>
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85" width="700" height="700" loading="lazy" alt="Balo màu trung tính">
+            <span class="image-caption">Sẵn sàng cho hành trình</span>
+          </a>
+          <div class="product-info" id="product-backpack">
+            <p class="product-category">THỜI TRANG</p>
+            <h3><a href="#product-backpack">Balo tối giản đi học và đi làm</a></h3>
+            <div class="rating"><span>★ ★ ★ ★ ☆</span> <small>4.6 · 52 đánh giá</small></div>
+            <div class="price-row"><strong>349.000đ</strong><del>429.000đ</del></div>
+            <div class="product-meta"><span>Đã bán 410</span><span>Nhiều ngăn tiện dụng</span></div>
+            <button class="add-button" type="button">＋ Thêm vào giỏ</button>
+          </div>
+        </article>
+      </div>
+      <p class="demo-note">* Dữ liệu giá, đánh giá, lượt bán và ưu đãi trong trang là nội dung minh họa, không phải thông tin bán hàng thực tế.</p>
+    </section>
+
+    <section class="container video-section" id="video" aria-labelledby="video-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">VIDEO NGẮN</p>
+          <h2 id="video-title">Video giới thiệu sản phẩm</h2>
+          <p class="section-description">Xem nhanh sản phẩm trong vài chục giây. Đây là khung minh họa, chưa phát video thật.</p>
+        </div>
+      </div>
+      <div class="video-grid">
+        <a class="video-card" href="#product-headphones" aria-label="Xem video: Tai nghe Bluetooth không dây">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=540&h=960&q=80" width="540" height="960" loading="lazy" alt="Video giới thiệu tai nghe">
+          <span class="video-duration">0:18</span>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <span class="video-info"><strong>Tai nghe Bluetooth không dây</strong><small>12,4k lượt xem</small></span>
+        </a>
+        <a class="video-card" href="#product-bottle" aria-label="Xem video: Bình giữ nhiệt tối giản 500ml">
+          <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=540&h=960&q=80" width="540" height="960" loading="lazy" alt="Video giới thiệu bình giữ nhiệt">
+          <span class="video-duration">0:15</span>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <span class="video-info"><strong>Bình giữ nhiệt tối giản 500ml</strong><small>8,9k lượt xem</small></span>
+        </a>
+        <a class="video-card" href="#product-lamp" aria-label="Xem video: Đèn bàn học thiết kế hiện đại">
+          <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=540&h=960&q=80" width="540" height="960" loading="lazy" alt="Video giới thiệu đèn bàn học">
+          <span class="video-duration">0:22</span>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <span class="video-info"><strong>Đèn bàn học thiết kế hiện đại</strong><small>6,1k lượt xem</small></span>
+        </a>
+        <a class="video-card" href="#product-backpack" aria-label="Xem video: Balo tối giản đi học và đi làm">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=540&h=960&q=80" width="540" height="960" loading="lazy" alt="Video giới thiệu balo">
+          <span class="video-duration">0:20</span>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <span class="video-info"><strong>Balo tối giản đi học và đi làm</strong><small>4,7k lượt xem</small></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="container search-tip" id="search-help">
+      <div class="tip-icon">⌕</div>
+      <div>
+        <h2>Chưa tìm thấy sản phẩm phù hợp?</h2>
+        <p>Thử dùng từ khóa cụ thể hơn, thêm thương hiệu hoặc khoảng giá để thu hẹp lựa chọn.</p>
+      </div>
+      <a href="#search-input" class="secondary-link">Tìm kiếm lại ↑</a>
+    </section>
+
+    <section class="container cart-preview" id="cart" aria-labelledby="cart-title">
+      <h2 id="cart-title">Giỏ hàng của bạn</h2>
+      <p>Giỏ hàng đang trống. Chức năng thêm sản phẩm sẽ được bổ sung ở bước lập trình sau.</p>
+    </section>
+  </main>
+
+  <footer id="support">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#"><span class="brand-mark">M</span><span>MuaSắm<span class="brand-accent">Nhanh</span></span></a>
+      <p>Giao diện mẫu phục vụ bài tập phát triển website bằng HTML5 và CSS3.</p>
+      <span>© 2026 MuaSắmNhanh · Demo học tập</span>
+    </div>
+  </footer>
+</body>
+</html>
